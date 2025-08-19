@@ -10,11 +10,11 @@ void main()
     {
             printf("\nThe lengths %d %d %d can form a triangle",a,b,c);
 
-             if((a=b=c))
+             if(((a==b) && (b==c) && (a==c)))
     {
             printf("\nThe lengths %d %d %d can form an equilateral triangle",a,b,c);
     }
-    else if(((a=b) && (b!=c)) || ((a=c) && (b!=a)) || ((c=b) && (a!=c)))
+    else if(((a==b) && (b!=c)) || ((a==c) && (b!=a)) || ((c==b) && (a!=c)))
     {
                     printf("\nThe lengths %d %d %d form a isosceles triangle",a,b,c);
 
